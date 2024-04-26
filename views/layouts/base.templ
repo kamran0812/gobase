@@ -1,0 +1,23 @@
+package layouts
+
+import "github.com/kamran0812/gobase/views/components"
+
+templ Base() {
+	<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+			<script src="https://unpkg.com/alpinejs" defer></script>
+			<script src="https://unpkg.com/htmx.org@1.9.9" defer></script>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<title>Base Golang</title>
+			<meta charset="UTF-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<link rel="stylesheet" href="/public/styles.css"/>
+		</head>
+		<body>
+			{ children... }
+			@components.Navigation()
+		</body>
+	</html>
+}
